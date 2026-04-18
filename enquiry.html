@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Enquiry | Buddy's Comfort Kitchen Catering</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Buddy's Comfort Kitchen Logo" width="150" height="100">
+        </div>
+        <h1>Send an Enquiry to Buddy's Comfort Kitchen Catering</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="enquiry.html">Send Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav> 
+     </header>     
+     
+     <main>
+        <section>
+            <h2>We'd Love to hear from you! Request a quote</h2>
+            <p>If you have any questions about our catering services, want to discuss a custom menu,
+             please fill out the form below and we'll get back to you as soon as possible.</p>
+
+            <form action="submit_enquiry.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="event">Event Type:</label><br>
+                <input type="text" id="event" name="event"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <label for="budget">Estimated Budget:</label><br>
+                <input type="number" id="budget" name="budget"><br><br> 
+
+                <label for="dietary requirements">Dietary Requirements:</label><br>
+                <input type="text" id="dietary requirements" name="dietary requirements"><br><br>
+
+                <input type="submit" value="Submit Enquiry">
+                <input type="reset" value="Reset Form" e="Clear Form">  
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Buddy's Comfort Kitchen Catering. All rights reserved. | Contact: 0637761239 | info@buddyscomfortkitchen.com</p>
+    </footer>
+
+</body>
+</html>
