@@ -23,12 +23,45 @@ The main objectives include promoting the business, displaying the catering menu
 customers to contact the business for bookings, and increasing the number of catering 
 orders. 
 
+| KPI | Target | Measurement Method | Timeframe |
+| Online order conversion rate | 40% increase | Track form submissions vs website visitors | Within 5 months |
+| Weekly enquiry volume | 20+ enquiries per week | Count contact form and enquiry form submissions | Ongoing |
+| Email database growth | 500 subscribers | Count newsletter signups | By end of Year 1 |
+| Website traffic | 1000 monthly visitors | Google Analytics | By end of Month 3 |
+| Customer response rate | < 24 hours | Track response time to enquiries | Ongoing |
+
 ## Timeline and Milestones
 The development of the website will follow a simple timeline. 
-Week 1: Planning and gathering requirements. 
-Week 2: Designing the layout and structure of the website. 
-Week 3: Developing the website using HTML and CSS. 
-Week 4: Testing the website and making final improvements before launching 
+Week 1 : 16-12 April 2026 - Planning & Requirements  Project proposal, content research, sitemap (completed)
+Week 2 : 13-19 April 2026 - HTML Structure | All 5 HTML pages with navigation and content(Completed)
+Week 3 : 20-26 April 2026 - CSS Styling | External stylesheet with colors, fonts, layout (In Progress)
+Week 4 : 27 April - 3 May 2026 - Responsive Design | Mobile and tablet breakpoints, testing (Pending)
+Week 5 : 4-10 May 2026 - JavaScript & Forms | Form validation, gallery lightbox, maps (Pending)
+Week 6 : 11-17 May 2026 - SEO & Deployment | Meta tags, sitemap.xml, GitHub Pages deploy (Pending)
+Week 7 : 18-24 May 2026 - Final Testing | Cross-browser testing, bug fixes (Pending)
+Week 8 :25-31 May 2026 - Submission | Final push to GitHub, LMS submission (Pending)
+
+Week 1-2 (Part 1):
+- Project proposal document
+- 5 HTML pages (index, about, menu, enquiry, contact)
+- Navigation menu on all pages
+- Enquiry form and contact form
+- README.md with changelog and references
+
+Week 3-4 (Part 2):
+- External CSS stylesheet
+- Color scheme (#008080,#FF6B35,#FFF8E1,#FF6B35,#C87481)
+- Typography (Playfair Display, Montserrat)
+- Responsive design for mobile (max-width: 768px)
+- Responsive design for tablet (max-width: 1024px)
+
+Week 5-6 (Part 3):
+- JavaScript form validation
+- Gallery with lightbox feature
+- Interactive maps (Google Maps or Leaflet)
+- Meta tags for SEO
+- XML sitemap
+- GitHub Pages deployment
 
 ## Sitemap
 
