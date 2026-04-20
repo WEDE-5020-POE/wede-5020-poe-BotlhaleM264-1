@@ -35,10 +35,15 @@ This project follows Semantic Versioning.
 - Website deployment
 
 ### Changed
-- xyz
+- Updated README.md with complete references section
+- Fixed broken image links in index.html
+- Corrected navigation menu
+- Added budget section to project proposal
 
 ### Fixed
-- xyz
+- Re-sized hero image 
+- Fixed broken link to enquiry page in footer
+- Corrected form validation attributes on enquiry.html
 
 ## Semantic Versioning
 
