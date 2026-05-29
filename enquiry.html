@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make an Enquiry | Buddy's Comfort Kitchen Catering</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--external css file -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -23,42 +27,97 @@
      </header>     
      
      <main>
+        <div class="container">
+            <div class="form-container">
         <section>
             <h2>We'd Love to hear from you! Request a quote</h2>
             <p>If you have any questions about our catering services, want to discuss a custom menu,
              please fill out the form below and we'll get back to you as soon as possible.</p>
 
-            <form action="submit_enquiry.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" required>
+                </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <div class="form-group">
+                <label>Email Adress:</label>
+                <input type="email" required>
+                </div>
 
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone"><br><br>
+                <div class="form-group">
+                <label>Phone Number:</label>
+                <input type="tel">
+                </div>
 
-                <label for="event">Event Type:</label><br>
-                <input type="text" id="event" name="event"><br><br>
+                <div class="form-group">
+                <label>Event Type:</label>
+                <select>
+                    <option>Birthdat Party</option>
+                    <option>Corporate Event</option>
+                    <option>Wedding</option>
+                    <option>Family Gathering</option>
+                </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Event Date</label>
+                    <input type="date"> 
+                </div>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <div class="form-group">
+                <label>Estimated Budget:</label>
+                <input type="number">
+                </div>
 
-                <label for="budget">Estimated Budget:</label><br>
-                <input type="number" id="budget" name="budget"><br><br> 
+                <div class="form-group"
+                 <label>Dietary Requirements:</label>
+                <input type="text">
+                </div>
+                
+                <div class="form-group">
+                    <label>Message / Special Requests</label>
+                    <textarea rows="5" placeholder="Tell us about your event..."></textarea>
+                </div>
 
-                <label for="dietary requirements">Dietary Requirements:</label><br>
-                <input type="text" id="dietary requirements" name="dietary requirements"><br><br>
-
-                <input type="submit" value="Submit Enquiry">
-                <input type="reset" value="Reset Form" e="Clear Form">  
+                <button type="submit" class="btn btn-primary">Send Enquiry</button>  
+            </div>
+        </div>
             </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Buddy's Comfort Kitchen Catering. All rights reserved. | Contact: 0637761239 | info@buddyscomfortkitchen.com</p>
-    </footer>
-
+     <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+            <h4>Buddy's Comfort Kitchen</h4>
+            <p>Providing delicious and comforting meals for all your catering needs.</p>
+        </div>
+        <div>
+            <h4> Quick links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="enquiry.html">Send Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Get in Touch</h4>
+            <p><strong>Phone:</strong> 0637761239</p>
+            <p><strong>Email:</strong> info@buddyscomfortkitchen.com</p>
+            <p><strong>Address:</strong> Pretoria and surrounding areas</p>
+            <p><strong>Opening Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM<br> Sat: 10:00 AM - 4:00 PM<br> SUN: closed</p>
+        </div>
+    </div>             
+    <p>&copy; 2026 Buddy's Comfort Kitchen Catering. All rights reserved.</p>
+    
+        <a href="https://www.instagram.com/buddyscomfortkitchen" target="_blank">Instagram</a> | 
+        <a href="https://www.twitter.com/buddyscomfortkitchen" target="_blank">Twitter</a> 
+    </div>
+</footer>                                
 </body>
 </html>

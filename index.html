@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Buddy's Comfort Kitchen | Home Catering</title>
+    <!---Google fonts--->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--external css file -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="container">
  <header>
     <div class="logo">
         <img src="images/logo.png" alt="Buddy's Comfort Kitchen Logo" width="150" height="100">
@@ -24,78 +29,163 @@
 
 <main>
     <section class="hero">
+       <div class = "container">
         <img src="images/heroimage.jpg" alt="Delicious food from Buddy's Comfort Kitchen" width="100%" height="350">
         <h2>Welcome to Buddy's Comfort Kitchen Catering!</h2>
         <p>Established in 2019 by Buddy Smith Buddy's Comfort Kitchen has been serving delicious and comforting meals for all your catering needs.</p>
-        <p>At Buddy's Comfort Kitchen, we specialize in providing delicious and comforting meals for all your catering needs.
-    Whether you're planning a corporate event, a family gathering, or a special celebration, we've got you covered with our diverse menu and exceptional service.
-     Our team of experienced chefs uses only the freshest ingredients to create mouthwatering dishes that will satisfy every palate. 
-     From classic comfort foods to innovative culinary creations, we offer a wide range of options to suit any occasion.
-     Contact us today to learn more about our catering services and how we can make your next event unforgettable! </p>
+        <p>At Buddy's Comfort Kitchen, we specialize in providing delicious and comforting meals for all your catering needs. Whether you're planning a corporate event, a family gathering, or a special celebration, we've got you covered with our diverse menu and exceptional service.  Our team of experienced chefs uses only the freshest ingredients to create mouthwatering dishes that will satisfy every palate. 
+     From classic comfort foods to innovative culinary creations, we offer a wide range of options to suit any occasion. Contact us today to learn more about our catering services and how we can make your next event unforgettable! </p>
+        <a href="menu.html" class="btn" class=" btn-primary">View Our Menu</a>
+        <a href="enquiry.html" class="btn" class=" btn-secondary">Request a Quote</a>
+     </div>
     </section>
 
     <section class="services">
+      <div class="container">
         <h2>Our Catering Services</h2>
-        <img src="images/food3.jpg" alt="Catering services at Buddy's Comfort Kitchen" width="400" height="450">
-        <p>We offer a variety of catering services to meet your needs, including:</p>
-        <ul>
-            <li>Corporate Catering</li>
-            <li>Event Catering</li>
-            <li>Family Meal Packages</li>
-            <li>Custom Menu Options</li>
-        </ul>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="images/catering1.jpg" alt="Corporate catering at Buddy's Comfort Kitchen" width="400" height="300">
+                <h3>Corporate Catering</h3>
+                <p>Impress your clients and colleagues with our delicious corporate catering options. 
+                 From breakfast meetings to lunch buffets, we have a variety of menu options to suit your needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/food3.jpg" alt="Catering services at Buddy's Comfort Kitchen" width="400" height="450">
+                <p>We offer a variety of catering services to meet your needs, including:</p>
+                <ul>
+                    <li>Corporate Catering</li>
+                    <li>Event Catering</li>
+                    <li>Family Meal Packages</li>
+                    <li>Custom Menu Options</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section class="featured-dishes">
-        <h3>Featured Dishes</h3>    
-            <img src="images/dish2.jpg" alt="Traditional Sunday Kos" width="350" height="200">
+        <div class="container">
+            <h3>Featured Dishes</h3>  
+             <div class="menu-grid">
+              <div class="menu-item"> 
+            <img src="images/dish2.jpg" alt="Traditional Sunday Kos" width="150" height="150">
+            <div>
             <h3>Traditional Sunday Kos</h3> 
             <P> A hearty and satisfying meal that brings people together. </P>
+            <span class="price">R120 per person</span>
+            </div>
         </div>
-        <div class="dish">
-            <img src="images/dish3.jpg" alt="Homestyle lasagna" width="200" height="200">
+        <div class="menu-item">
+            <img src="images/dish3.jpg" alt="Homestyle lasagna" width="150" height="150">
             <h3>Homestyle lasagna</h3>
             <p>Rich, cheesy, and comforting!</p>
+            <span class="price">R150 per person</span>
         </div>
-        <div class="dish">
-            <img src="images/dish4.jpg" alt="Slow-cooked Beef Stew" width="200" height="200">
+        <div class="menu-item">
+            <img src="images/dish4.jpg" alt="Slow-cooked Beef Stew" width="150" height="150">
             <h3>Slow-cooked Beef Stew</h3>
-            <p>Rich, tender, and full of flavor!</p>   
+            <p>Rich, tender, and full of flavor!</p>
+            <span class="price">R180 per person</span>
         </div>
-        <div class="dish">
-            <img src="images/dish5.jpg" alt="Decadent Chocolate Brownies" width="200" height="200">
+        <div class="menu-item">
+            <img src="images/dish5.jpg" alt="Decadent Chocolate Brownies" width="150" height="150">
             <h3>Decadent Chocolate Brownies</h3>
-            <p>Rich,fudgy, and irresistible!</p>   
+            <p>Rich,fudgy, and irresistible!</p>
+            <span class="price">R120 per person</span>
         </div>
     </section>
 
+    <div class="container">
+        <div class="special-offer">
+        <h2>Special Offer: Book Your Event with Us and Get 10% Off!</h2>
+        <p>For a limited time, when you book your event with Buddy's Comfort Kitchen Catering, you'll receive a 10% discount on your total catering order. 
+         Whether you're planning a corporate event, a family gathering, or a special celebration, now is the perfect time to choose Buddy's Comfort Kitchen for your catering needs. 
+         Contact us today to learn more about this special offer and how we can make your next event unforgettable!</p>
+         <a href="enquiry.html" class="btn" class=" btn-primary">Claim this Offer</a>
+        </div>
+    </div>
+
     <section class="why-choose-us">
-    <h3>Why Choose Us?</h3>
-    <img src="images/chefs.jpg" alt="Buddy's Comfort Kitchen Team" width="500" height="500">
-    <ul>
-        <li>Experienced chefs with a passion for comfort food</li>
-        <li>Fresh, high-quality ingredients</li>
-        <li>Customizable menu options to suit your event</li>
-        <li>Reliable and professional catering service</li>
-        <li>Family-owned and operated</li>
-    </ul>
+        <div class="container">
+            <div class="why-choose-us-content">
+                <h2>Why Choose Buddy's Comfort Kitchen Catering?</h2>
+                <div class="why-choose-us-grid">
+                    <div class="why-card">
+                        <h3>Experienced Chefs</h3>
+                        <img src="images/chefs.jpg" alt="Buddy's Comfort Kitchen Team" width="500" height="500">
+                        <p>Our team of experienced chefs brings a passion for comfort food to every event.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Fresh Ingredients</h3>
+                        <p>We use only the freshest, highest-quality ingredients in all our dishes.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Customizable Menus</h3>
+                        <p>Our menu options can be tailored to suit the specific needs of your event.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Free Delivery</h3>
+                        <p>We offer free delivery for all areas within 10km of our kitchen.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Exceptional Service</h3>
+                        <p>Our team is dedicated to providing exceptional service and ensuring your event runs smoothly.</p>
+                    </div>
+                </div>
+                <p>At Buddy's Comfort Kitchen, we are committed to providing exceptional catering services that exceed your expectations. 
+                 Here are just a few reasons why you should choose us for your next event:</p>
     </section>
 
     <section class="contact">
-    <p>Contact us today to learn more about our catering services 
-    and how we can make your next event unforgettable!
-    <a href="contact.html">Contact Us</a>|<a href="enquiry.html">Request a Quote</a></p>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Us Today!</h3>
+                    <p>Contact us today to learn more about our catering services and how we can make your next event unforgettable! 
+                     You can reach us by phone at 0637761239 or by email at
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Quote</h3>
+                    <p>Have questions about our catering services or want to discuss a custom menu? 
+                     Fill out our enquiry form and we'll get back to you as soon as possible!</p>
+                     <a href="enquiry.html" class="btn" class=" btn-secondary">Send an Enquiry</a>
+                     <a href="contact.html">Contact Us</a>|<a href="enquiry.html">Request a Quote</a></p>
+                </div>
+            </div>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2026 Buddy's Comfort Kitchen Catering. All rights reserved.| Contact:0637761239</p>  
-    <p>Follow us on social media: 
-        <a href="https://www.facebook.com/buddyscomfortkitchen" target="_blank">Facebook</a> | 
+ <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+            <h4>Buddy's Comfort Kitchen</h4>
+            <p>Providing delicious and comforting meals for all your catering needs.</p>
+        </div>
+        <div>
+            <h4> Quick links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="enquiry.html">Send Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Get in Touch</h4>
+            <p><strong>Phone:</strong> 0637761239</p>
+            <p><strong>Email:</strong> info@buddyscomfortkitchen.com</p>
+            <p><strong>Address:</strong> Pretoria and surrounding areas</p>
+            <p><strong>Opening Hours:</strong> Mon - Fri: 8:00 AM - 6:00 PM<br> Sat: 9:00 AM - 4:00 PM<br> SUN: closed</p>
+        </div>
+    </div>            
+    <p>&copy; 2026 Buddy's Comfort Kitchen Catering. All rights reserved.</p>
+    
         <a href="https://www.instagram.com/buddyscomfortkitchen" target="_blank">Instagram</a> | 
         <a href="https://www.twitter.com/buddyscomfortkitchen" target="_blank">Twitter</a> 
-    </p>
-</footer>                                
+    </div>
+</footer>  
+</div>                              
 </body>
 </html>
-            

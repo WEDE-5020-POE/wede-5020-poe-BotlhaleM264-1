@@ -67,6 +67,50 @@ Week 5-6 (Part 3):
 
 ![Sitemap](images/sitemap.png)
 
+## Part 2 - CSS Styling & Responsive Design
+### Color Palette
+The website uses a warm, homey color palette:
+- **Deep Teal** `#2C4A2E` - Headings, navigation, footer
+- **Warm Orange** `#E76F51` - Buttons, hover effects (POP color)
+- **Warm Cream** `#FFFDF7` - Page background
+- **Soft Yellow** `#E9C46A` - Accents, special offers
+- **Dark Grey** `#3A3A3A` - Body text (100% visible)
+
+### CSS Features Implemented
+-  External stylesheet linked to all 5 pages
+-  Google Fonts (Playfair Display + Montserrat)
+-  CSS Grid for layout structure
+-  Flexbox for navigation
+-  Hover effects on all buttons and cards
+-  Custom button styles (btn-primary, btn-secondary)
+-  Responsive images with max-width: 100%
+
+### Responsive Design Breakpoints
+
+| Device | Breakpoint | Layout Changes |
+|--------|------------|----------------|
+| Desktop | > 1024px | 4 columns (services), 2 columns (menu) |
+| Tablet | 768px - 1024px | 2 columns (services), 2 columns (menu) |
+| Mobile | < 768px | 1 column (all grids), stacked navigation |
+
+### Screenshots
+#### Desktop View
+![Desktop View](images/desktop.png)
+
+#### Tablet View (1024px)
+![Tablet View](images/tablet.png)
+
+#### Mobile View (768px)
+![Mobile View](images/mobile.png)
+
+### Part 2 Changelog
+- Created external CSS file with custom color palette
+- Implemented responsive design for tablet and mobile
+- Added hover effects and pseudo-classes
+- Created services grid, menu grid, and why choose us grid
+- Added special offer section with gradient background
+- Ensured all text is dark and 100% visible
+
 ## References
 Coolors. (2024). Warm orange catering palette. Available at:  
 Create a Palette - Coolors (Accessed: 11 April 2026) 
