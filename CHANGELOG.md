@@ -53,3 +53,30 @@ Example: 2.1.3
 - MAJOR → Breaking changes (1.0.0 → 2.0.0)  
 - MINOR → New features (1.0.0 → 1.1.0)  
 - PATCH → Bug fixes / small improvements (1.0.0 → 1.0.1)
+
+### Part 3 - Final Submission (20 June 2026)
+
+**JavaScript Features Added:**
+-  Form validation on enquiry.html (name, email, phone, date, guests, event type, budget, dietary, message)
+-  Form validation on contact.html (name, email, subject, message)
+-  Error messages displayed for invalid input
+-  Success messages with event details on enquiry form
+-  Gallery lightbox (click images to enlarge)
+-  Menu search/filter functionality (search by keyword)
+-  Accordion FAQ section (click to expand answers)
+
+**SEO Optimizations:**
+-  Unique title tags for all 5 pages
+-  Meta descriptions for all 5 pages
+-  Meta keywords for all 5 pages
+-  Alt text on all images
+
+**Deployment:**
+-  Website deployed on Netlify
+-  Live URL: https://taupe-truffle-540da3.netlify.app
+-  All pages tested and working
+
+**Fixes Applied:**
+-  Fixed gallery images (2-column layout with proper sizing)
+-  Added IDs to all form elements for JavaScript validation
+-  Fixed image sizing with object-fit: contain

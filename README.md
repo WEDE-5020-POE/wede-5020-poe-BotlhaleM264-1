@@ -158,9 +158,8 @@ The website uses a warm, homey color palette:
 | contact.html | Contact Us | Contact information... |
 
 ### Deployment
-
-The website is deployed on GitHub Pages:
-[]
+The website is deployed on Netlify:
+[https://taupe-truffle-540da3.netlify.app/]
 
 ### Part 3 Changelog
 - Added JavaScript form validation on enquiry.html and contact.html
