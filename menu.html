@@ -4,10 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu | Buddy's Comfort Kitchen Catering</title>
+    <meta name="description" content="Explore our delicious catering menu including family meal packages, event catering, and custom menu options. Fresh, home-style cooking in Pretoria.">
+    <meta name="keywords" content="catering menu, family meals, event catering, comfort food, Pretoria menu, home cooking">
+    <meta name="author" content="Buddy's Comfort Kitchen">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!--external css file -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ===== MENU PAGE FIXES ===== */
+        
+        .menu-hero {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+        
+        .menu-hero h1 {
+            font-size: 2.8rem;
+            color: #2C4A2E;
+            margin-bottom: 20px;
+        }
+        .menu-hero img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .menu-hero p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 1.1rem;
+            color: #4A4A4A;
+            line-height: 1.8;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #2C4A2E;
+            text-align: center;
+            margin: 50px 0 25px;
+            position: relative;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #E76F51;
+            margin: 10px auto 0;
+            border-radius: 3px;
+        }
+        /* Family Packages */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 30px 0 50px;
+        }
+        .package-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            border-bottom: 4px solid #E9C46A;
+            transition: transform 0.3s;
+        }
+         .package-card:hover {
+            transform: translateY(-8px);
+            border-bottom-color: #E76F51;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .package-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .package-card h3 {
+            color: #E76F51;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .package-card p {
+            color: #5A5A5A;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+         .package-card .price {
+            color: #2C4A2E;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+            background: #FDF8F0;
+            border-radius: 10px;
+        }
+        /* Two Column Section */
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin: 40px 0;
+            align-items: center;
+        }
+        .two-column-section .image-wrapper img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .two-column-section .content-wrapper h3 {
+            color: #E76F51;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .two-column-section .content-wrapper p {
+            color: #4A4A4A;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .two-column-section .content-wrapper ul {
+            list-style: none;
+            padding: 0;
+        }
+        .two-column-section .content-wrapper ul li {
+            padding: 12px 15px;
+            background: #FDF8F0;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            color: #4A4A4A;
+            border-left: 3px solid #E76F51;
+        }
+        
+        .two-column-section .content-wrapper ul li strong {
+            color: #E76F51;
+        }
+        .featured-dishes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .dish-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 4px solid #E9C46A;
+             }
+        
+        .dish-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-bottom-color: #E76F51;
+        }
+        
+        .dish-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dish-card .dish-info {
+            padding: 20px;
+        }
+        
+        .dish-card .dish-info h4 {
+            color: #E76F51;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .dish-card .dish-info p {
+            color: #5A5A5A;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            }
+        
+        .dish-card .dish-info .price {
+            color: #2C4A2E;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-block;
+            padding: 5px 15px;
+            background: #FDF8F0;
+            border-radius: 20px;
+        }
+        
+        /* Custom Menu Section */
+        .custom-section {
+            background: #FDF8F0;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+        }
+        
+        .custom-section .two-column-section {
+            margin: 0;
+        }
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .featured-dishes-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+        }
+        @media (max-width: 768px) {
+            .packages-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .two-column-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .two-column-section .image-wrapper {
+                order: -1;
+            }
+            .featured-dishes-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .menu-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+             .custom-section {
+                padding: 25px;
+            }
+        }
+    </style>    
 </head>
 <body>
     <header>
@@ -29,45 +269,46 @@
      <main>
         <section>
             <div class="container">
-              <div style="text-align: center; margin: 30px 0 20px;">
-            <img src="images/food.jpg" alt="Menu at Buddy's Comfort Kitchen" style="width: 100%; max-width: 1000px; border-radius: 20px; display: block; margin: 0 auto;">
-            </div>
-             <h2 style="font: size 2.8rem; color: #2c4a2e;">Explore Our Delicious Menu!</h2>
-            <p style="max-width:800px; margin: 0 auto; font-size: 1.1rem;">At Buddy's Comfort Kitchen Catering, we take pride in offering a diverse menu that caters to a variety of tastes and dietary preferences. 
+              <div class="menu-hero">
+                <h2>Explore Our Delicious Menu</h2>
+                <img src="images/food.jpg" alt="Menu at Buddy's Comfort Kitchen" style="width: 100%; max-width: 1000px; border-radius: 20px; display: block; margin: 0 auto;">
+                <p>At Buddy's Comfort Kitchen Catering, we take pride in offering a diverse menu that caters to a variety of tastes and dietary preferences. 
             Whether you're looking for classic comfort foods or innovative culinary creations, we have something for everyone. 
             Our menu is designed to provide delicious and satisfying meals that will make your event unforgettable.</p>
-                </div>
+            <!-- Search Bar -->
+                 <div style="max-width: 500px; margin: 30px auto;">
+                    <input type="text" id="menuSearch" placeholder=" Search menu items..." style="width: 100%; padding: 15px 20px; border: 2px solid #E9C46A; border-radius: 50px; font-size: 1rem; outline: none;">
+                 </div>
+              </div>
 
-                <div class="image-left-layout">
-                <div>
-                    <img src="images/familymealpackages.jpg" alt="Family Meal Packages at Buddy's Comfort Kitchen" width=600 height=450>
-                </div>
-                <div>
-            <h3 class="section-title"> Family Meal Packages</h3>
-            <div class="menu-grid">
-                <div class="menu-item">
-        
-            </div>
-            <p>Our family meal packages are perfect for busy families who want to enjoy delicious and comforting meals without the hassle of cooking. 
+              <hr class="section-divider">
+            <!-- Family Meal Packages -->
+             <div class="package-section" style="text-align: center; margin: 50px 0 20px;">
+                <img src="images/familymealpackages.jpg" alt="Family Meal Packages at Buddy's Comfort Kitchen" width=600 height=450>
+             </div>
+             <h3 class="section-title"> Family Meal Packages</h3>
+             <p style="text-align: center; max-width: 600px; margin: 0 auto 30px; color: #5A5A5A;">Our family meal packages are perfect for busy families who want to enjoy delicious and comforting meals without the hassle of cooking. 
              Our family meal packages include:</p>
-            <h2>Family Meal Packages</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <div>
-                    <h4>Comfort Classic Package</h4><p>Choice of protein, 2 sides, salad, dessert</p><span class="price">R350 (serves 4)</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div>
-                    <h4>Family Feast Package</h4><p>2 proteins, 3 sides, salad, dessert, bread</p><span class="price">R550 (serves 6-8)</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div>
-                    <h4>Celebration Package</h4><p>3 proteins, 4 sides, 2 salads, 2 desserts</p><span class="price">R850 (serves 10-12)</span>
-                </div>
-            </div>
-        </div>
+                
+    <div class="packages-grid">
+    <div class="package-card">
+        <h3>Comfort Classic</h3>
+        <p>Choice of protein, 2 sides, salad, dessert</p>
+        <span class="price">R350 (serves 4)</span>
+    </div>
+    <div class="package-card">
+        <h3>Family Feast</h3>
+        <p>2 proteins, 3 sides, salad, dessert, bread basket</p>
+        <span class="price">R550 (serves 6-8)</span>
+    </div>
+<div class="package-card">
+        <h3>Celebration Bundle</h3>
+        <p>3 proteins, 4 sides, 2 salads, 2 desserts, bread, drinks</p>
+        <span class="price">R850 (serves 10-12)</span>
+    </div>
+</div>
+         
+<hr class="section-divider">
 
          <div style="margin: 60px 0;">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
@@ -167,6 +408,7 @@
         <a href="https://www.instagram.com/buddyscomfortkitchen" target="_blank">Instagram</a> | 
         <a href="https://www.twitter.com/buddyscomfortkitchen" target="_blank">Twitter</a> 
     </div>
-</footer>                                
+</footer>
+<script src="js/script.js"></script>                             
 </body>
 </html>

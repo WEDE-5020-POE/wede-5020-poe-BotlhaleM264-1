@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Send an enquiry to Buddy's Comfort Kitchen Catering for custom catering services. Tell us about your event and we'll get back toyou witin 24 hours.">
+    <meta name="keywords" content="catering enquiry, catering quote, custom menu, event catering, Buddy's Comfort Kitchen">
+    <meta name="author" content="Buddy's Comfort Kitchen Catering">
     <title>Make an Enquiry | Buddy's Comfort Kitchen Catering</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -33,58 +37,67 @@
             <h2>We'd Love to hear from you! Request a quote</h2>
             <p>If you have any questions about our catering services, want to discuss a custom menu,
              please fill out the form below and we'll get back to you as soon as possible.</p>
-
-            <form>
-                <div class="form-grid">
-                    <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" required>
-                </div>
-
-                <div class="form-group">
-                <label>Email Adress:</label>
-                <input type="email" required>
-                </div>
-
-                <div class="form-group">
-                <label>Phone Number:</label>
-                <input type="tel">
-                </div>
-
-                <div class="form-group">
-                <label>Event Type:</label>
-                <select>
-                    <option>Birthdat Party</option>
-                    <option>Corporate Event</option>
-                    <option>Wedding</option>
-                    <option>Family Gathering</option>
-                </select>
-                </div>
-                
-                <div class="form-group">
-                    <label>Event Date</label>
-                    <input type="date"> 
-                </div>
-
-                <div class="form-group">
-                <label>Estimated Budget:</label>
-                <input type="number">
-                </div>
-
-                <div class="form-group"
-                 <label>Dietary Requirements:</label>
-                <input type="text">
-                </div>
-                
-                <div class="form-group">
-                    <label>Message / Special Requests</label>
-                    <textarea rows="5" placeholder="Tell us about your event..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Send Enquiry</button>  
-            </div>
+            <div id="enquiryErrors"></div>   
+            <form id="enquiryForm">
+    <div class="form-grid">
+        <div class="form-group">
+            <label>Full Name:</label>
+            <input type="text" id="enquiryName" required>
         </div>
-            </form>
+
+        <div class="form-group">
+            <label>Email Address:</label>
+            <input type="email" id="enquiryEmail" required>
+        </div>
+
+                <div class="form-group">
+            <label>Phone Number:</label>
+            <input type="tel" id="enquiryPhone">
+        </div>
+
+        <div class="form-group">
+            <label>Event Date:</label>
+            <input type="date" id="enquiryDate" required>
+        </div>
+        <div class="form-group">
+            <label>Number of Guests:</label>
+            <input type="number" id="enquiryGuests" min="1" required>
+        </div>
+        <div class="form-group">
+            <label>Estimated Budget (R):</label>
+            <input type="number" id="enquiryBudget" min="0" step="100" placeholder="e.g., 5000">
+        </div>
+        <div class="form-group">
+            <label>Dietary Requirements:</label>
+            <select id="enquiryDietary">
+                <option value="None">No restrictions</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+                <option value="Halal">Halal</option>
+                <option value="Other">Other (please specify in message)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Event Type:</label>
+            <select id="enquiryEventType" required>
+                <option value="">Select event type</option>
+                <option value="Birthday Party">Birthday Party</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Family Gathering">Family Gathering</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Message / Special Requests:</label>
+        <textarea id="enquiryMessage" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Enquiry</button>
+</form>
+
+<div id="enquiryResponse"></div>
         </section>
     </main>
 
@@ -118,6 +131,7 @@
         <a href="https://www.instagram.com/buddyscomfortkitchen" target="_blank">Instagram</a> | 
         <a href="https://www.twitter.com/buddyscomfortkitchen" target="_blank">Twitter</a> 
     </div>
-</footer>                                
+</footer> 
+<script src="js/script.js"></script>                           
 </body>
 </html>

@@ -110,6 +110,68 @@ The website uses a warm, homey color palette:
 - Created services grid, menu grid, and why choose us grid
 - Added special offer section with gradient background
 - Ensured all text is dark and 100% visible
+- Added contact section on homepage
+- Fixed empty space on right side with container class
+- Ensured all text is dark and 100% visible
+
+**Fixes Applied:**
+- Fixed empty space on right side by adding `.container` class
+- Changed text color from white to dark grey for visibility
+- Resized images to be responsive (max-width: 100%)
+- Fixed navigation to stack vertically on mobile
+
+## Part 3 - JavaScript, SEO & Deployment (19 June 2026)
+### JavaScript Features Implemented
+
+- **Form Validation** (enquiry.html and contact.html)
+  - Client-side validation with error messages
+  - Email format validation
+  - Phone number validation
+  - Required field validation
+  - Success message with event details
+
+- **Gallery Lightbox**
+  - Click images to enlarge
+  - Smooth transitions
+  - Close button and background click to close
+
+  - **Interactive Maps**
+  - 2 location maps (Pretoria, Johannesburg)
+  - Google Maps iframe integration
+
+- **Search Functionality**
+  - Filter menu items by keyword
+  - Real-time search results
+
+- **Accordion FAQ**
+  - Click to expand/collapse answers
+  - Smooth interactions
+
+  ### SEO Optimizations
+
+| Page | Title | Meta Description |
+|------|-------|------------------|
+| index.html | Buddy's Comfort Kitchen | Home catering in Pretoria... |
+| about.html | About Us | Established in 2019... |
+| menu.html | Our Menu | Family meal packages... |
+| enquiry.html | Enquiry | Get a free quote... |
+| contact.html | Contact Us | Contact information... |
+
+### Deployment
+
+The website is deployed on GitHub Pages:
+[]
+
+### Part 3 Changelog
+- Added JavaScript form validation on enquiry.html and contact.html
+- Implemented gallery lightbox feature
+- Added interactive maps for 2 locations
+- Added menu search functionality
+- Added accordion FAQ section
+- Added SEO meta tags to all pages
+- Added alt text to all images
+- Deployed website on GitHub Pages
+- Updated README and changelog
 
 ## References
 Coolors. (2024). Warm orange catering palette. Available at:  

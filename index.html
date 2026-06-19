@@ -4,10 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Buddy's Comfort Kitchen | Home Catering</title>
+    <meta name="description" content="Buddy's Comfort Kitchen provides delicious home-style catering for events, family gatherings, and corporate functions in Pretoria. Get a free quote today!">
+    <meta name="keywords" content="catering, home cooking, comfort food, Pretoria catering, family meals, event catering, township catering, Buddy's Kitchen">
+    <meta name="author" content="Buddy's Comfort Kitchen">
     <!---Google fonts--->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!--external css file -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ===== INDEX PAGE FIXES ===== */
+
+/* Fix paragraph spacing */
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4A4A4A;
+    padding: 0 20px;
+}
+/* Fix hero buttons */
+.hero .btn {
+    margin: 10px;
+}
+
+/* Fix service grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-bottom: 3px solid #E9C46A;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-bottom-color: #E76F51;
+}
+.service-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #E76F51;
+    margin-bottom: 10px;
+}
+.service-card p {
+    color: #5A5A5A;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.service-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #4A4A4A;
+}
+/* ===== BUTTON OVERRIDE - VISIBLE ===== */
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: #E76F51 !important;
+            color: white !important;
+            box-shadow: 0 5px 15px rgba(231,111,81,0.3);
+        }
+        
+        .btn-primary:hover {
+            background-color: #d45a3a !important;
+            color: white !important;
+            transform: translateY(-3px);
+        }
+.btn-secondary {
+            background-color: #2C4A2E !important;
+            color: white !important;
+            box-shadow: 0 5px 15px rgba(44,74,46,0.3);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #1e3320 !important;
+            color: white !important;
+            transform: translateY(-3px);
+        }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .hero .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -31,24 +154,26 @@
     <section class="hero">
        <div class = "container">
         <img src="images/heroimage.jpg" alt="Delicious food from Buddy's Comfort Kitchen" width="100%" height="350">
-        <h2>Welcome to Buddy's Comfort Kitchen Catering!</h2>
+        <h2 style="color: #2c4a2e;font-size: 2.8rem;">Welcome to Buddy's Comfort Kitchen Catering!</h2>
         <p>Established in 2019 by Buddy Smith Buddy's Comfort Kitchen has been serving delicious and comforting meals for all your catering needs.</p>
         <p>At Buddy's Comfort Kitchen, we specialize in providing delicious and comforting meals for all your catering needs. Whether you're planning a corporate event, a family gathering, or a special celebration, we've got you covered with our diverse menu and exceptional service.  Our team of experienced chefs uses only the freshest ingredients to create mouthwatering dishes that will satisfy every palate. 
      From classic comfort foods to innovative culinary creations, we offer a wide range of options to suit any occasion. Contact us today to learn more about our catering services and how we can make your next event unforgettable! </p>
+        <div>
         <a href="menu.html" class="btn" class=" btn-primary">View Our Menu</a>
         <a href="enquiry.html" class="btn" class=" btn-secondary">Request a Quote</a>
+        </div>
      </div>
     </section>
 
     <section class="services">
       <div class="container">
-        <h2>Our Catering Services</h2>
+        <h2 style="color: #2c4a2e;">Our Catering Services</h2>
         <div class="service-grid">
             <div class="service-card">
-                <img src="images/catering1.jpg" alt="Corporate catering at Buddy's Comfort Kitchen" width="400" height="300">
+                <img src="images/catering.jpg" alt="Corporate catering at Buddy's Comfort Kitchen" width="400" height="300">
                 <h3>Corporate Catering</h3>
                 <p>Impress your clients and colleagues with our delicious corporate catering options. 
-                 From breakfast meetings to lunch buffets, we have a variety of menu options to suit your needs.</p>
+                  From breakfast meetings to lunch buffets, we have a variety of menu options to suit your needs.</p>
             </div>
             <div class="service-card">
                 <img src="images/food3.jpg" alt="Catering services at Buddy's Comfort Kitchen" width="400" height="450">
@@ -61,6 +186,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="featured-dishes">
@@ -142,7 +268,7 @@
                 <div class="contact-info">
                     <h3>Contact Us Today!</h3>
                     <p>Contact us today to learn more about our catering services and how we can make your next event unforgettable! 
-                     You can reach us by phone at 0637761239 or by email at
+                     You can reach us by phone at 0637761239 or by email at info@buddyscomfortkitchen.co.za</p>
                 </div>
                 <div class="contact-form">
                     <h3>Request a Quote</h3>
@@ -154,6 +280,50 @@
             </div>
     </section>
 </main>
+<!-- ===== GALLERY SECTION ===== -->
+<section style="padding: 40px 0; background: #FDF8F0;">
+    <div class="container">
+        <h2 style="text-align: center; color: #2C4A2E;">Our Catering Gallery</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">Take a look at some of our delicious meals.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+            <img src="images/meal1.jpg" alt="Delicous meal" class="gallery-image" style="width: 100%; border-radius: 12px; cursor: pointer;">
+            <img src="images/meal2.jpg" alt="Delicous meal" class="gallery-image" style="width: 100%; border-radius: 12px; cursor: pointer;">
+            <img src="images/meal3.jpg" alt="Delicous meal" class="gallery-image" style="width: 100%; border-radius: 12px; cursor: pointer;">
+            <img src="images/meal4.jpg" alt="Delicous meal" class="gallery-image" style="width: 100%; border-radius: 12px; cursor: pointer;">
+            <img src="images/meal5.jpg" alt="Delicous meal" class="gallery-image" style="width: 100%; border-radius: 12px; cursor: pointer;">
+            <img src="images/meal6.jpg" alt="Delicous meal" class="gallery-image" style="width: 100%; border-radius: 12px; cursor: pointer;">
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 999; align-items: center; justify-content: center; cursor: pointer;">
+    <span id="lightboxClose" style="position: absolute; top: 30px; right: 40px; color: white; font-size: 3rem; cursor: pointer;">&times;</span>
+    <img id="lightboxImg" src="" alt="Enlarged image" style="max-width: 90%; max-height: 85%; object-fit: contain; border-radius: 8px;">
+</div>
+
+<!-- FAQ Section -->
+<section style="padding: 40px 0;">
+    <div class="container">
+        <h2 style="text-align: center; color: #2C4A2E;">Frequently Asked Questions</h2>
+        
+        <div style="max-width: 700px; margin: 30px auto;">
+            <div style="margin-bottom: 10px; border: 1px solid #E9C46A; border-radius: 12px; overflow: hidden;">
+                <div class="accordion-header" style="padding: 15px 20px; background: #FDF8F0; cursor: pointer; font-weight: 600; color: #2C4A2E;"> How far in advance do I need to book?</div>
+                <div class="accordion-content" style="display: none; padding: 15px 20px; background: white;">We recommend booking at least 2-3 weeks in advance.</div>
+            </div>
+            <div style="margin-bottom: 10px; border: 1px solid #E9C46A; border-radius: 12px; overflow: hidden;">
+                <div class="accordion-header" style="padding: 15px 20px; background: #FDF8F0; cursor: pointer; font-weight: 600; color: #2C4A2E;"> Do you cater for dietary restrictions?</div>
+                <div class="accordion-content" style="display: none; padding: 15px 20px; background: white;">Yes! We offer vegetarian, vegan, gluten-free, and halal options.</div>
+            </div>
+            <div style="margin-bottom: 10px; border: 1px solid #E9C46A; border-radius: 12px; overflow: hidden;">
+                <div class="accordion-header" style="padding: 15px 20px; background: #FDF8F0; cursor: pointer; font-weight: 600; color: #2C4A2E;"> Do you deliver?</div>
+                <div class="accordion-content" style="display: none; padding: 15px 20px; background: white;">Yes! Free delivery within 10km of our kitchen.</div>
+            </div>
+        </div>
+    </div>
+</section>
 
  <footer>
     <div class="container">
@@ -186,6 +356,7 @@
         <a href="https://www.twitter.com/buddyscomfortkitchen" target="_blank">Twitter</a> 
     </div>
 </footer>  
-</div>                              
+</div> 
+<script src="js/script.js"></script>                             
 </body>
 </html>
